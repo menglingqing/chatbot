@@ -4,6 +4,7 @@
     <Layout>
       <Layout>
         <Header :style="{padding: 0, minHeight: '10vh'}" class="layout-header-bar">
+          <span class="chatbot-name">{{chatbotName}}</span>
           <Icon
             @click.native="collapsedSider"
             :class="rotateIcon"
@@ -11,7 +12,6 @@
             type="md-menu"
             size="24"
           ></Icon>
-          <span class="chatbot-name">{{chatbotName}}</span>
         </Header>
       </Layout>
       <Layout>
@@ -64,7 +64,7 @@ export default {
     return {
       chatbotAvatar,
       isCollapsed: false,
-      chatbotName: "萍萍",
+      chatbotName: "自动回复助手",
       chatModelIndex: "1-2",
       initChatbotAnswer: "请问有什么可以帮助您的？",
       userInput: "",
@@ -154,11 +154,18 @@ export default {
   overflow: hidden;
 }
 .layout-header-bar {
-  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #097fe0;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color:#fff;
 }
 .ivu-layout-sider {
-  background: #097fe0;
+  background: #fff;
+}
+.chatbot-name{
+  text-indent: 2em;
 }
 .layout-logo-left {
   width: 90%;
