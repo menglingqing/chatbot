@@ -135,7 +135,7 @@ export default {
       { name: "chat", cn: "普通对话", icon: "ios-chatbubbles" },
       { name: "auto_completion", cn: "自动匹配", icon: "ios-search" },
       { name: "upload", cn: "上传文件", icon: "ios-cloud-upload" },
-      { name: "duty", cn: "值班表", icon: "ios-alarm" }
+      { name: "duty", cn: "日历", icon: "ios-alarm" }
     ];
     this.changeChatModel(this.chatModelIndex);
     this.initChatbotAnswer =

@@ -13,7 +13,7 @@
       <span class="chatbotmsg-content" v-else-if="chatModel.name === 'upload'">
           <tableUpload></tableUpload>
       </span>
-      <span class="chatbotmsg-content" v-else-if="chatModel.name === 'duty'">值班表</span>
+      <span class="chatbotmsg-content" v-else-if="chatModel.name === 'duty'">日历</span>
     </div>
   </div>
 </template>
